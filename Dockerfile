@@ -24,6 +24,8 @@ RUN git clone https://github.com/zachzeid/terraform.git gcp_terraform
 RUN pwd && ls
 WORKDIR gcp_terraform
 RUN export GOOGLE_APPLICATION_CREDENTIALS=herpaderp-dd00d52e1429.json
+RUN gcloud auth activate-service-account --key-file=herpaderp-dd00d52e1429.json
+RUN gcloud config set project herpaderp-1
 RUN pwd && ls
 
 
