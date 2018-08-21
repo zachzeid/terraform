@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "herpaderp-1",
+  "private_key_id": "dd00d52e14296462fed5a538a2c0f174d63c87f9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCzwaKqZmb+Bo7G\nHuJcyRF05midr+h+vh8+h1uDZGx8uHAEK5YzURn1hiCFuHeqINLBnYfDT3YquqL9\nlaZ8gGF+BZCgG025aD/hwMBuwT2IJWKTuLfNvD6k7MbUCS7g/l6ofKBjzmDslBZA\nyLMyxY93ZgnGgETQSPFhcD2PynGnTuGWYv9LLHOCSou+PPOptkmhrWHvRWxMgiMz\ngpAKKaz0bM0qjhPV5FeOlCi6LmFGj9WoXjLtc0mQ+RHtW0EbFCSRjuKVieuTC/gX\nUeQXf4ikvL9YkNjEbdIyKdL4ME3VgeyDErnVE80KY4NipkGckZW62Wa6jgzx/jhl\n857zDFy/AgMBAAECggEATQAp95d1D+TsPPcW3UsuRKa8cqvbSouTo7vk2iRnCogR\nR+AJ78KSfaeuf8mUzRZRYani8am0wzn+vuTfk96EpLCqksMPaNg84S4p4Ge7vXnS\nP9g1OBamuQxKYaLrZ2rfTopQRGCwCTeoTqkKhjm1qp5Vmqfwkk5kw+oKHPHJ/LIo\nRxTwcIghqB+ieO5C8yySnzDSjUdFZCsUs11bFeRfAfjM57PBrvSPeBT0K8hPJ8e0\nUzi0w8vbAhcf5XctY6ZYb4MH+n0uojvVRKNZs/OAthZRbrDpMLlZkq/SJDURD85P\nxnAxF6zvu3bxlK/FzcBt6E5LKXLozFTnAf1XGBVBgQKBgQDZxbmT91tfqwCNzBk6\nwqeCaqZu4ujZEeim14tblEzAadVPU6bln7JKE8pb3++Ovaw4wYA4/z84wLAsEGRC\np3XxtWJ3MavJjzOhREwI0nA5sIPsxkY23dRGXV/Tx1AJF97zCPWjISo2Zeps+5YE\nU2nYQEy1u2y4O0jERpqI815kPwKBgQDTT4uG+L/90i4F+8yE5eBqNpcGsIR5MLzZ\nox2RlJ8aamBZvytp8868EItg/xAvKyAGWDXefwY/284oSNdJ7jXozCgMDAvmTPAm\nDVGtXxn/tbKkW094mZcTq72/RFx9Ecqun0Av53T2fgoqICkdq5Ut7lunmhZc9/wZ\nbmRlrjnngQKBgDRDL3ZDNrqO32MoSCXB8VFrJuYVrqvpkFv5/ofL31+OBpMzECqr\nWK5OcZH6/BLVki9MwOjs2M9V7vGkPWuBpNyNG0Rft0p4A3wAV/8GAcjWg9KfAtrI\nAdmhLw40FxEXmXnZ/JlZrDfB3bCp8Ca5nf038TDr+ft8vsnb59pWDaEhAoGBAJIV\nTNVLhJc5xX13fQVnUkS7Zp9GSt7pdbVT0e5B+9gsMF37Dk1aMtLK8UBmNM8XFjWs\np9kgobZmA9jPup4uo3BEK29gqJ1XFTKJRK0BsRyZhV2gjolGTS5ZLX1cCkCgmykr\niRlU/wQlUGuc/i+33hL51L1ChjFRcyQ1sAynbPqBAoGAJ4GEM9CuYCVJZRi4p8QX\nTt8s5Op4Vj0ybMWS87GvxuUZF4dNFXGyCV1i5hBUYS29sySp8OFsSnKfLM3rPBFQ\nPcsTIi/FObIeGh0f20CYQinCHK9hppj2llwd0alBvygvUxVDG9l1iJv+aICDd4iO\nGwUXLNlfy3e0XZJ0TGFNGrA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "terraformer@herpaderp-1.iam.gserviceaccount.com",
+  "client_id": "113494336152709856483",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraformer%40herpaderp-1.iam.gserviceaccount.com"
+}
