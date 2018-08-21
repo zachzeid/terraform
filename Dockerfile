@@ -28,7 +28,6 @@ RUN gcloud auth activate-service-account --key-file=herpaderp-dd00d52e1429.json
 RUN gcloud config set project herpaderp-1
 
 RUN ls && pwd
-RUN curl http://169.254.169.254/computeMetadata/v1/instance/service-accounts/default/token
 RUN terraform init
 RUN terraform plan -var deployed_from=herpaderp -out gcp_terraform
 RUN terraform apply gcp_terraform
