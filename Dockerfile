@@ -11,3 +11,9 @@ RUN unzip terraform_*.zip
 RUN mv terraform /usr/local/bin/
 
 RUN terraform --version
+
+RUN pwd
+
+RUN mkdir terraform
+
+RUN git clone https://github.com/zachzeid/terraform.git
