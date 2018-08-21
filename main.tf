@@ -3,7 +3,7 @@ variable "from" {
   default = "cloudbuilder"
 }
 resource "google_compute_instance" "sshserver" {
-  name = "sshserver1"
+  name = "sshserver"
   machine_type = "n1-standard-1"
   zone = "us-central1-b"
   labels = {
