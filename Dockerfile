@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 
 RUN apt-get update
 
-RUN apt-get -y install unzip wget git
+RUN apt-get -y install unzip wget git curl
 RUN wget https://releases.hashicorp.com/terraform/0.11.8/terraform_0.11.8_linux_amd64.zip
 
 RUN unzip terraform_*.zip
@@ -16,7 +16,7 @@ RUN terraform --version
 RUN git clone https://github.com/zachzeid/terraform.git
 WORKDIR terraform
 RUN ls && pwd
-
+RUN curl http://169.254.169.254/computeMetadata/v1/instance/service-accounts/default/token
 RUN terraform init
 RUN terraform plan -var deployed_from=herpaderp -out gcp_terraform
 RUN terraform apply gcp_terraform
