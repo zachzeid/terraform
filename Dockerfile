@@ -14,7 +14,7 @@ RUN terraform --version
 
 
 RUN git clone https://github.com/zachzeid/terraform.git
-RUN cd terraform
+WORKDIR terraform
 RUN ls && pwd
 
 RUN terraform plan -var deployed_from=herpaderp -out gcp_terraform
