@@ -15,9 +15,7 @@ RUN export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)" && \
     curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add - && \
     apt-get update -y && apt-get install google-cloud-sdk -y
 
-RUN gcloud init --console-only
-RUN gcloud auth login
-RUN gcloud config set project herpaderp-1
+
 
 RUN mv terraform /usr/local/bin/
 
