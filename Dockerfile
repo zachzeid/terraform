@@ -29,5 +29,5 @@ RUN gcloud config set project herpaderp-1
 
 RUN ls && pwd
 RUN terraform init
-RUN terraform plan -var from=herpaderp -out gcp_terraform
+RUN terraform plan -out gcp_terraform
 RUN terraform apply gcp_terraform

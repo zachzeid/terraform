@@ -3,13 +3,16 @@ provider "google" {
   project = "herpaderp-1"
   region = "us-central1"
 }
-
+variable "from" {
+  type = "string"
+  default = "cloudbuilder"
+}
 resource "google_compute_instance" "sshserver" {
   name = "sshserver1"
   machine_type = "n1-standard-1"
   zone = "us-central1-b"
   labels = {
-    deployed = "{var.from}"
+    deployed = "${var.from}"
 
     }
   boot_disk = {
