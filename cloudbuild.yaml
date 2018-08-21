@@ -1,0 +1,4 @@
+steps:
+  - name: 'gcr.io/cloud-builder/docker'
+    args: ['build', '-t', 'gcr.io/herpaderp-1/image01', '.']
+    timeout: 500s
