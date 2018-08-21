@@ -1,5 +1,7 @@
 FROM ubuntu:16.04
 
+EXPOSE 80
+
 RUN apt-get update
 
 RUN apt-get -y install unzip wget git curl
