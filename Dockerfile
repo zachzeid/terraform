@@ -19,17 +19,3 @@ RUN export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)" && \
 RUN mv terraform /usr/local/bin/
 
 RUN terraform --version
-
-RUN git clone https://github.com/zachzeid/terraform.git gcp_terraform
-RUN pwd && ls
-WORKDIR gcp_terraform
-RUN export GOOGLE_APPLICATION_CREDENTIALS=herpaderp-dd00d52e1429.json
-RUN gcloud auth activate-service-account --key-file=herpaderp-dd00d52e1429.json
-RUN gcloud config set project herpaderp-1
-RUN pwd && ls
-
-
-RUN ls && pwd
-RUN terraform init
-RUN terraform plan -out gcp_terraform
-RUN terraform apply gcp_terraform
