@@ -1,4 +1,4 @@
 steps:
 - name: gcr.io/cloud-builders/docker
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/terraform_image', 'docker/.']
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/terraform_image', './docker/Dockerfile']
 images: ['gcr.io/$PROJECT_ID/terraform_image']
