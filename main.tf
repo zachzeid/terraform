@@ -11,6 +11,7 @@ resource "google_compute_instance" "sshserver" {
   zone = "us-central1-b"
   labels = {
     deployed = "${var.from}"
+    project = "${var.project-name}"
 
     }
   boot_disk = {
