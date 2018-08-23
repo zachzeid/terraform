@@ -9,11 +9,13 @@ steps:
     args: ['plan']
     env:
       - "TF_VAR_project-name=${PROJECT_ID}"
+      - "TF_VAR_updated-from=${REPO_NAME}"
 
 
   - name: 'gcr.io/${PROJECT_ID}/terraform'
     args: ['apply', '-auto-approve']
     env:
       - "TF_VAR_project-name=${PROJECT_ID}"
+      - "TF_VAR_updated-from=${REPO_NAME}"
 
     timeout: 500s
