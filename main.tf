@@ -6,6 +6,7 @@ resource "google_compute_instance" "sshserver" {
   labels = {
     deployed = "${var.from}"
     project = "${var.project-name}"
+    repo = "${var.updated-from}"
 
     }
   boot_disk = {

@@ -3,5 +3,10 @@ variable "from" {
   default = "cloudbuilder"
 }
 variable "project-name" {
+  type = "string"
+
+}
+variable "updated-from" {
+  type = "string"
 
 }
