@@ -1,10 +1,4 @@
-variable "from" {
-  type = "string"
-  default = "cloudbuilder"
-}
-variable "project-name" {
 
-}
 resource "google_compute_instance" "sshserver" {
   name = "sshserver-${var.project-name}-${var.from}"
   machine_type = "n1-standard-1"
