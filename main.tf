@@ -6,7 +6,7 @@ variable "project-name" {
 
 }
 resource "google_compute_instance" "sshserver" {
-  name = "sshserver-${var.from}-${var.project-name}"
+  name = "sshserver-${var.project-name}-${var.from}"
   machine_type = "n1-standard-1"
   zone = "us-central1-b"
   labels = {
