@@ -4,6 +4,6 @@ RUN apt-get -y install unzip wget git curl lsb-release
 RUN wget https://releases.hashicorp.com/terraform/0.11.8/terraform_0.11.8_linux_amd64.zip
 RUN unzip terraform_*.zip
 RUN rm terraform_*.zip
-RUN ls
+RUN ls && pwd
 RUN mv terraform /usr/local/bin/
 RUN terraform --version
