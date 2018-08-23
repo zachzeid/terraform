@@ -1,5 +1,4 @@
 provider "google" {
-  credentials = "${file("terraform-svc.json")}"
   project = "herpaderp-1"
   region = "us-central1"
 }
