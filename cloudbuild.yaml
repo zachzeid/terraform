@@ -1,18 +1,18 @@
 steps:
 
 
-  - name: 'gcr.io/herpaderp-1/terraform'
+  - name: 'gcr.io/herpaderp-1/terraform_image'
     args: ['init', '-backend-config=project=${PROJECT_ID}',
            '-backend-config=bucket=terraform-remote-state-5c1f261e-f412-4e1e-8907-63ba259ec6f5']
     env:
       - "TF_VAR_project-name=${PROJECT_ID}"
-  - name: 'gcr.io/$PROJECT_ID/terraform'
+  - name: 'gcr.io/$PROJECT_ID/terraform_image'
     args: ['plan']
     env:
       - "TF_VAR_project-name=${PROJECT_ID}"
 
 
-  - name: 'gcr.io/${PROJECT_ID}/terraform'
+  - name: 'gcr.io/${PROJECT_ID}/terraform_image'
     args: ['apply', '-auto-approve']
     env:
       - "TF_VAR_project-name=${PROJECT_ID}"
