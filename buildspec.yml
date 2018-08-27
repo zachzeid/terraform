@@ -2,8 +2,8 @@ version: 0.2
 
 env:
   variables:
-    TF_VAR_project-name: "test-aws"
-    TF_VAR_updated-from: "terraform"
+    TF_VAR_project_name: "test-aws"
+    TF_VAR_updated_from: "terraform"
 
 phases:
   install:
@@ -19,4 +19,3 @@ phases:
   post_build:
     commands:
       echo Entered postbuild phase
-    
