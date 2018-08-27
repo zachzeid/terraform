@@ -1,0 +1,22 @@
+version: 0.2
+
+env:
+  variables:
+    TF_VAR_project-name: "test-aws"
+    TF_VAR_updated-from: "terraform"
+
+phases:
+  install:
+    commands:
+      - echo Entering install phase
+      - apt-get update -y
+      - apt-get install unzip -y
+      - apt-get install curl -y
+      - apt-get install wget -y
+  build:
+    commands:
+      echo Entered buildphase
+  post_build:
+    commands:
+      echo Entered postbuild phase
+    
