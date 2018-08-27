@@ -16,7 +16,8 @@ phases:
       - wget https://releases.hashicorp.com/terraform/0.11.8/terraform_0.11.8_linux_amd64.zip
       - unzip terraform*.zip
       - mv terraform /usr/local/bin
-      - terraform -v 
+      - terraform -v
+      - ls && pwd
   build:
     commands:
       echo Entered buildphase
