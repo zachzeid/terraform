@@ -13,11 +13,6 @@ data "aws_ami" "ubuntu" {
 }
 
 resource "aws_instance" "sshserver" {
-  name = "sshserver-${var.project_name}-${var.updated_from}"
+  name = "sshserver"
   instance_type = "t2.micro"
-  tags = {
-    project = "${var.project_name}"
-    repo = "${var.updated_from}"
-
-    }
 }
