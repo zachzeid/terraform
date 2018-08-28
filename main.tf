@@ -16,6 +16,6 @@ resource "aws_instance" "sshserver" {
   instance_type = "t2.micro"
   ami = "${data.aws_ami.ubuntu.id}"
   tags {
-    name = "sshserver"
+    Name = "sshserver01"
   }
 }
