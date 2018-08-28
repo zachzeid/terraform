@@ -13,6 +13,8 @@ data "aws_ami" "ubuntu" {
 }
 
 resource "aws_instance" "sshserver" {
-  name = "sshserver"
   instance_type = "t2.micro"
+  tags {
+    name = "sshserver"
+  }
 }
