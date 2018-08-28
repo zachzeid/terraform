@@ -2,9 +2,9 @@ variable "from" {
   type = "string"
   default = "cloudbuilder"
 }
-variable "project-name" {
+variable "project_name" {
 
 }
-variable "updated-from" {
+variable "updated_from" {
 
 }
