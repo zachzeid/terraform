@@ -27,4 +27,4 @@ phases:
   post_build:
     commands:
       - echo Entered postbuild phase
-      - terraform apply -auto-approve
+      - terraform apply -var-file="variables.tf" -auto-approve
