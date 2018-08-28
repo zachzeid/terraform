@@ -20,7 +20,11 @@ phases:
       - ls && pwd
   build:
     commands:
-      echo Entered buildphase
+      - echo Entered buildphase
+      - terraform init -backend-config=project=${project_name} -backend-config=bucket=terraform-remote-state-5c1f261e-f412-4e1e-8907-63ba259ec6f5
+      - terraform plan
+
   post_build:
     commands:
-      echo Entered postbuild phase
+      - echo Entered postbuild phase
+      - terraform apply -auto-approve
